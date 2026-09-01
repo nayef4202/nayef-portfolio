@@ -1,6 +1,6 @@
 import { type ReactNode, useEffect, useState } from 'react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { ArrowDown, ArrowUpRight, BrainCircuit, BriefcaseBusiness, Check, ChevronDown, Code2, Coffee, Cpu, Github, GraduationCap, Instagram, Linkedin, Mail, Menu, ShieldCheck, Sparkles, Target, Users, X } from 'lucide-react';
+import { ArrowDown, ArrowUpRight, BrainCircuit, BriefcaseBusiness, Check, ChevronDown, Code2, Coffee, Cpu, Github, GraduationCap, Instagram, Linkedin, Mail, Menu, Moon, ShieldCheck, Sparkles, Sun, Target, Users, X } from 'lucide-react';
 import { ErrorBoundary } from '@/components/error-boundary';
 import { Toaster } from '@/components/ui/toaster';
 import { TooltipProvider } from '@/components/ui/tooltip';
@@ -96,7 +96,17 @@ function Home() {
   const [activeSection, setActiveSection] = useState('about');
   const [copied, setCopied] = useState(false);
   const [showTop, setShowTop] = useState(false);
+  const [isDark, setIsDark] = useState(() => {
+    if (typeof window === 'undefined') return false;
+    const savedTheme = window.localStorage.getItem('nayef-theme');
+    return savedTheme ? savedTheme === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+  });
   useRevealObserver();
+
+  useEffect(() => {
+    document.documentElement.classList.toggle('dark', isDark);
+    window.localStorage.setItem('nayef-theme', isDark ? 'dark' : 'light');
+  }, [isDark]);
 
   useEffect(() => {
     const sections = navItems.map((item) => document.getElementById(item.id)).filter(Boolean) as HTMLElement[];
@@ -134,6 +144,10 @@ function Home() {
             ))}
           </nav>
           <div className="flex items-center gap-4">
+            <button data-testid="button-theme-toggle" onClick={() => setIsDark((current) => !current)} className="theme-toggle inline-flex items-center gap-2 rounded-full border border-[#20364c]/20 px-3 py-2 text-xs font-semibold text-[#20364c] transition-colors hover:border-[#bdd944] hover:text-[#ef7f64]" aria-label={isDark ? 'تفعيل الوضع النهاري' : 'تفعيل الوضع الليلي'} title={isDark ? 'الوضع النهاري' : 'الوضع الليلي'}>
+              {isDark ? <Sun size={16} aria-hidden="true" /> : <Moon size={16} aria-hidden="true" />}
+              <span className="hidden sm:inline">{isDark ? 'نهاري' : 'ليلي'}</span>
+            </button>
             <a data-testid="link-header-email" href={`mailto:${email}`} className="hidden items-center gap-2 text-sm font-semibold text-[#20364c] transition-colors hover:text-[#ef7f64] sm:flex">
               <span>لنتحدث</span><ArrowUpRight size={16} aria-hidden="true" />
             </a>
@@ -268,7 +282,7 @@ function Home() {
 
         <section className="pb-28 md:pb-36">
           <div className="section-wrap">
-            <div className="reveal relative overflow-hidden rounded-[1.7rem] border border-[#ef7f64]/40 bg-[#ef7f64] p-8 md:p-14">
+            <div className="goal-panel reveal relative overflow-hidden rounded-[1.7rem] border border-[#ef7f64]/40 bg-[#ef7f64] p-8 md:p-14">
               <div className="relative z-[1] max-w-3xl"><p className="font-mono-custom text-xs tracking-[.16em] text-[#20364c]">THE DIRECTION</p><h2 className="section-heading mt-6 text-4xl font-bold text-[#20364c] md:text-6xl">هدفي؟ أن أحوّل المعرفة إلى أثر.</h2><p className="mt-7 max-w-2xl text-lg leading-9 text-[#3f4f57]">أطمح إلى تطوير نفسي في مجال هندسة الكمبيوتر، واكتساب خبرات عملية حقيقية، والمساهمة مستقبلًا في بناء حلول تقنية مبتكرة وذات قيمة. الرحلة طويلة، وهذا ما يجعلها ممتعة.</p></div>
               <div className="absolute -left-8 -top-16 h-64 w-64 rounded-full border border-[#20364c]/20" /><div className="absolute -left-2 -top-10 h-52 w-52 rounded-full border border-[#20364c]/15" />
             </div>
