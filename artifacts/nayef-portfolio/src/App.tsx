@@ -62,13 +62,13 @@ function useRevealObserver() {
 function SocialLinks({ dark = false, footer = false }: { dark?: boolean; footer?: boolean }) {
   return (
     <div className={`flex flex-nowrap items-center gap-3 ${dark ? 'text-[#edf0de]' : 'text-[#20364c]'}`} aria-label="حسابات نايف الاجتماعية">
-      <a data-testid={footer ? 'link-footer-linkedin' : 'link-social-linkedin'} href="https://www.linkedin.com/" target="_blank" rel="noreferrer" className="social-icon" aria-label="حساب نايف على لينكدإن">
+      <a data-testid={footer ? 'link-footer-linkedin' : 'link-social-linkedin'} href="https://www.linkedin.com/" target="_blank" rel="noreferrer" className="social-icon" aria-label="حساب نايف خالد العتيبي على لينكدإن">
         <Linkedin size={19} aria-hidden="true" />
       </a>
-      <a data-testid={footer ? 'link-footer-github' : 'link-social-github'} href="https://github.com/" target="_blank" rel="noreferrer" className="social-icon" aria-label="حساب نايف على GitHub">
+      <a data-testid={footer ? 'link-footer-github' : 'link-social-github'} href="https://github.com/" target="_blank" rel="noreferrer" className="social-icon" aria-label="حساب نايف خالد العتيبي على GitHub">
         <Github size={19} aria-hidden="true" />
       </a>
-      <a data-testid={footer ? 'link-footer-instagram' : 'link-social-instagram'} href={instagramUrl} target="_blank" rel="noreferrer" className="social-icon" aria-label="حساب نايف على إنستغرام">
+      <a data-testid={footer ? 'link-footer-instagram' : 'link-social-instagram'} href={instagramUrl} target="_blank" rel="noreferrer" className="social-icon" aria-label="حساب نايف خالد العتيبي على إنستغرام">
         <Instagram size={19} aria-hidden="true" />
       </a>
     </div>
@@ -136,7 +136,7 @@ function Home() {
         <div className="section-wrap flex h-[74px] items-center justify-between">
           <button data-testid="button-logo-home" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="group flex items-center gap-3 text-right" aria-label="العودة إلى أعلى الصفحة">
             <span className="flex h-10 w-10 items-center justify-center rounded-[13px] bg-[#20364c] font-mono-custom text-sm font-bold text-[#bdd944] transition-transform group-hover:-rotate-6">ن</span>
-            <span className="hidden text-sm font-bold text-[#20364c] sm:block">نايف العتيبي</span>
+            <span className="hidden text-sm font-bold text-[#20364c] sm:block">نايف خالد العتيبي</span>
           </button>
           <nav className="hidden items-center gap-7 md:flex" aria-label="التنقل الرئيسي">
             {navItems.map((item) => (
@@ -174,7 +174,7 @@ function Home() {
           <div className="section-wrap grid items-center gap-16 lg:grid-cols-[1.15fr_.85fr]">
             <div className="reveal">
               <div className="mb-7 flex items-center gap-3 text-sm font-semibold text-[#ef7f64]"><span className="h-2 w-2 rounded-full bg-[#bdd944]" /> متاح للتعلم، البناء، والتعاون</div>
-              <h1 data-testid="text-hero-name" className="max-w-4xl text-[clamp(3.6rem,10vw,8.8rem)] font-bold leading-[.92] tracking-[-.09em] text-[#20364c]">نايف<br /><span className="mr-[.15em] text-[#ef7f64]">العتيبي</span></h1>
+                 <h1 data-testid="text-hero-name" className="max-w-4xl text-[clamp(3.6rem,10vw,8.8rem)] font-bold leading-[.92] tracking-[-.09em] text-[#20364c]">نايف خالد<br /><span className="mr-[.15em] text-[#ef7f64]">العتيبي</span></h1>
               <div className="mt-9 flex flex-col gap-6 border-r-2 border-[#bdd944] pr-5 sm:flex-row sm:items-start sm:gap-10">
                 <p data-testid="text-hero-title" className="max-w-md text-lg font-medium leading-9 text-[#3d5368]">طالب هندسة كمبيوتر<br /><span className="font-mono-custom text-xs tracking-normal text-[#ef7f64]">Computer Engineering Student</span></p>
                 <p data-testid="text-hero-intro" className="max-w-md leading-8 text-[#536577]">شغوف بالتقنية والتعلم والابتكار، وأسعى إلى تطوير مهاراتي وبناء مستقبل مهني مميز في مجال هندسة الكمبيوتر.</p>
@@ -186,7 +186,7 @@ function Home() {
             </div>
             <div className="reveal reveal-delay-2 relative mx-auto w-full max-w-[420px]">
               <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] border border-[#20364c]/20 bg-[#20364c] p-6 shadow-[18px_20px_0_rgba(189,217,68,.55)]">
-                 <img src={profileImage} alt="صورة نايف العتيبي الشخصية" className="absolute inset-0 h-full w-full object-cover object-top" />
+                 <img src={profileImage} alt="صورة نايف خالد العتيبي الشخصية" className="absolute inset-0 h-full w-full object-cover object-top" />
                  <div className="absolute inset-0 bg-gradient-to-t from-[#20364c] via-[#20364c]/15 to-transparent" />
                  <div className="absolute inset-0 opacity-25" style={{ backgroundImage: 'linear-gradient(rgba(189,217,68,.18) 1px, transparent 1px), linear-gradient(90deg, rgba(189,217,68,.18) 1px, transparent 1px)', backgroundSize: '30px 30px' }} />
                  <div className="relative z-[1] flex h-full flex-col justify-between">
@@ -307,9 +307,9 @@ function Home() {
 
       <footer className="border-t border-[#20364c]/15 py-8">
         <div className="section-wrap flex flex-col gap-7 sm:flex-row sm:items-center sm:justify-between">
-          <div><p className="font-bold text-[#20364c]">نايف العتيبي</p><p className="mt-1 text-xs text-[#667484]">طالب هندسة كمبيوتر · الكويت</p></div>
+          <div><p className="font-bold text-[#20364c]">نايف خالد العتيبي</p><p className="mt-1 text-xs text-[#667484]">طالب هندسة كمبيوتر · الكويت</p></div>
           <SocialLinks footer />
-          <div className="text-left text-xs text-[#667484]"><a data-testid="link-footer-instagram" href={instagramUrl} target="_blank" rel="noreferrer" className="font-semibold text-[#20364c] underline decoration-[#ef7f64] underline-offset-4 transition-colors hover:text-[#ef7f64]" aria-label="إنستغرام نايف — يفتح في تبويب جديد">إنستغرام</a><p className="mt-2 font-mono-custom">© 2024 NAYEF</p></div>
+          <div className="text-left text-xs text-[#667484]"><a data-testid="link-footer-instagram" href={instagramUrl} target="_blank" rel="noreferrer" className="font-semibold text-[#20364c] underline decoration-[#ef7f64] underline-offset-4 transition-colors hover:text-[#ef7f64]" aria-label="إنستغرام نايف خالد العتيبي — يفتح في تبويب جديد">إنستغرام</a><p className="mt-2 font-mono-custom">© 2024 NAYEF</p></div>
         </div>
       </footer>
 
