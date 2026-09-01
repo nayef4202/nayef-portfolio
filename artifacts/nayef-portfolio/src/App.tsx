@@ -37,6 +37,7 @@ const skills = [
   { label: 'إدارة الوقت', note: 'أحضر لما هو قادم', icon: Check },
   { label: 'التواصل والعمل الجماعي', note: 'أفضل الأفكار تُبنى معًا', icon: Users },
   { label: 'اللغة الإنجليزية', note: 'نافذة على المعرفة', icon: ArrowUpRight },
+  { label: 'التفوق الدراسي', note: 'من أوائل الطلبة في الثانوية العامة على مدار جميع المراحل الدراسية', icon: GraduationCap },
 ];
 
 const interests = [
