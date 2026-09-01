@@ -11,6 +11,7 @@ const queryClient = new QueryClient();
 const instagramUrl = 'https://www.instagram.com/nayef42002?igsi=ano0OTFq&utmsource=qr';
 const email = 'nayef4202@gmail.com';
 const profileImage = `${import.meta.env.BASE_URL}profile.jpg`;
+const uulaLogo = `${import.meta.env.BASE_URL}uula-logo.png`;
 
 const navItems = [
   { id: 'about', label: 'عني' },
@@ -216,8 +217,8 @@ function Home() {
                 <p className="mt-16 text-xs font-bold tracking-[.12em] text-[#667484]">التعليم</p><h3 data-testid="text-education" className="mt-3 text-2xl font-bold leading-9 text-[#20364c]">الجامعة الأمريكية<br />في الشرق الأوسط (AUM)</h3><p className="mt-4 text-[#536577]">هندسة الكمبيوتر · الكويت</p>
               </div>
               <div className="reveal reveal-delay-1 timeline-card rounded-[1.5rem] border border-[#20364c]/15 bg-[#20364c] p-7 text-[#edf0de]">
-                <div className="flex items-start justify-between"><BriefcaseBusiness size={28} className="text-[#bdd944]" /><span className="font-mono-custom text-xs text-[#bdd944]">EXPERIENCE / 01</span></div>
-                <p className="mt-16 text-xs font-bold tracking-[.12em] text-[#bdd944]">خبرة</p><h3 data-testid="text-experience" className="mt-3 text-3xl font-bold">سفير منصة علا<br /><span className="text-[#bdd944]">(UULA Ambassador)</span></h3><p className="mt-5 max-w-lg leading-8 text-[#c6d0c5]">المساهمة في تمثيل منصة علا والتعريف بها، والتواصل مع الطلبة، وبناء حضور إيجابي يعكس قيمة التجربة التعليمية الرقمية.</p>
+                <div className="flex items-start justify-between gap-4"><div className="flex h-16 w-16 items-center justify-center overflow-hidden rounded-2xl bg-[#0d111b] ring-1 ring-[#bdd944]/30"><img src={uulaLogo} alt="شعار منصة علا" className="h-full w-full object-cover" /></div><span className="pt-2 font-mono-custom text-xs text-[#bdd944]">EXPERIENCE / 01</span></div>
+                <p className="mt-10 text-xs font-bold tracking-[.12em] text-[#bdd944]">خبرة</p><h3 data-testid="text-experience" className="mt-3 text-3xl font-bold">سفير منصة علا<br /><span className="text-[#bdd944]">(UULA Ambassador)</span></h3><p className="mt-5 max-w-lg leading-8 text-[#c6d0c5]">المساهمة في تمثيل منصة علا والتعريف بها، والتواصل مع الطلبة، وبناء حضور إيجابي يعكس قيمة التجربة التعليمية الرقمية.</p>
               </div>
             </div>
           </div>
