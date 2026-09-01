@@ -238,7 +238,7 @@ function Home() {
                     <div className="flex items-start justify-between gap-4"><div className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#ef7f64] text-[#20364c]"><Sparkles size={23} aria-hidden="true" /></div><span className="pt-2 font-mono-custom text-xs text-[#bdd944]">COMMUNITY / 01</span></div>
                     <p className="mt-8 text-xs font-bold tracking-[.12em] text-[#bdd944]">مشاركة مجتمعية وثقافية</p><h3 className="mt-3 text-3xl font-bold leading-10">مشاركة في حفل شعري</h3><p className="mt-4 max-w-xl leading-8 text-[#c6d0c5]">المشاركة في حفل بحضور معالي محافظ مبارك الكبير بالتكليف الشيخ صباح بدر الصباح، في تجربة عززت الثقة بالنفس والقدرة على الحضور والتعبير أمام الجمهور.</p><p className="mt-5 font-mono-custom text-xs text-[#c6d0c5]">POETRY EVENT · KUWAIT</p>
                   </div>
-                  <div className="order-1 overflow-hidden rounded-2xl border border-[#edf0de]/15 bg-[#0d111b] lg:order-2"><img src={poetryEventImage} alt="نايف يشارك في حفل شعري على المسرح" className="block aspect-[1320/1308] h-auto max-h-[430px] w-full object-cover object-center" /></div>
+                  <div className="order-1 flex justify-center overflow-hidden rounded-2xl border border-[#edf0de]/15 bg-[#0d111b] p-3 lg:order-2"><img src={poetryEventImage} alt="نايف يشارك في حفل شعري على المسرح" className="block h-auto max-h-[320px] w-auto max-w-full object-contain object-center" /></div>
                 </div>
               </div>
             </div>
