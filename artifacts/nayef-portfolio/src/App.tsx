@@ -13,6 +13,7 @@ const email = 'nayef4202@gmail.com';
 const profileImage = `${import.meta.env.BASE_URL}profile.jpg`;
 const uulaLogo = `${import.meta.env.BASE_URL}uula-logo.png`;
 const cyberCertificate = `${import.meta.env.BASE_URL}cybersecurity-certificate.jpg`;
+const poetryEventImage = `${import.meta.env.BASE_URL}poetry-event.jpg`;
 
 const navItems = [
   { id: 'about', label: 'عني' },
@@ -229,6 +230,15 @@ function Home() {
                     <p className="mt-8 text-xs font-bold tracking-[.12em] text-[#ef7f64]">شهادة وتدريب</p><h3 className="mt-3 text-3xl font-bold leading-10">إتمام تدريب في الأمن السيبراني</h3><p className="mt-4 max-w-xl leading-8 text-[#536577]">إتمام 12 ساعة تدريبية في الأمن السيبراني، والمشاركة في هاكاثون كودد المقدّم من أكاديمية CODED.</p><p className="mt-5 font-mono-custom text-xs text-[#667484]">JULY 2024 · KUWAIT CODES</p>
                   </div>
                   <div className="order-1 overflow-hidden rounded-2xl border border-[#20364c]/15 bg-white lg:order-2"><img src={cyberCertificate} alt="شهادة إتمام تدريب الأمن السيبراني من أكاديمية CODED" className="block aspect-[1320/910] h-auto w-full object-cover" /></div>
+                </div>
+              </div>
+              <div className="reveal reveal-delay-3 timeline-card overflow-hidden rounded-[1.5rem] border border-[#ef7f64]/35 bg-[#20364c] p-5 text-[#edf0de] lg:col-span-2 lg:p-7">
+                <div className="grid items-center gap-7 lg:grid-cols-[.9fr_1.1fr]">
+                  <div className="order-2 lg:order-1">
+                    <div className="flex items-start justify-between gap-4"><div className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#ef7f64] text-[#20364c]"><Sparkles size={23} aria-hidden="true" /></div><span className="pt-2 font-mono-custom text-xs text-[#bdd944]">COMMUNITY / 01</span></div>
+                    <p className="mt-8 text-xs font-bold tracking-[.12em] text-[#bdd944]">مشاركة مجتمعية وثقافية</p><h3 className="mt-3 text-3xl font-bold leading-10">مشاركة في حفل شعري</h3><p className="mt-4 max-w-xl leading-8 text-[#c6d0c5]">المشاركة في حفل بحضور معالي محافظ مبارك الكبير بالتكليف الشيخ صباح بدر الصباح، في تجربة عززت الثقة بالنفس والقدرة على الحضور والتعبير أمام الجمهور.</p><p className="mt-5 font-mono-custom text-xs text-[#c6d0c5]">POETRY EVENT · KUWAIT</p>
+                  </div>
+                  <div className="order-1 overflow-hidden rounded-2xl border border-[#edf0de]/15 bg-[#0d111b] lg:order-2"><img src={poetryEventImage} alt="نايف يشارك في حفل شعري على المسرح" className="block aspect-[1320/1308] h-auto max-h-[430px] w-full object-cover object-center" /></div>
                 </div>
               </div>
             </div>
