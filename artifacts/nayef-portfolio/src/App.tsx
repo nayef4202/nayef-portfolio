@@ -12,6 +12,7 @@ const instagramUrl = 'https://www.instagram.com/nayef42002?igsi=ano0OTFq&utmsour
 const email = 'nayef4202@gmail.com';
 const profileImage = `${import.meta.env.BASE_URL}profile.jpg`;
 const uulaLogo = `${import.meta.env.BASE_URL}uula-logo.png`;
+const cyberCertificate = `${import.meta.env.BASE_URL}cybersecurity-certificate.jpg`;
 
 const navItems = [
   { id: 'about', label: 'عني' },
@@ -212,7 +213,7 @@ function Home() {
         <section id="journey" className="scroll-mt-24 py-28 md:py-40">
           <div className="section-wrap">
             <SectionIntro number="03" eyebrow="المسيرة حتى الآن" title="الخطوة الأولى ليست صغيرة عندما تعرف إلى أين تتجه." />
-            <div className="grid gap-5 lg:grid-cols-[1fr_1.3fr]">
+            <div className="grid gap-5 lg:grid-cols-2">
               <div className="reveal timeline-card rounded-[1.5rem] border border-[#20364c]/15 bg-[#f1efdf]/60 p-7">
                 <div className="flex items-start justify-between"><GraduationCap size={28} className="text-[#ef7f64]" /><span className="font-mono-custom text-xs text-[#ef7f64]">2026—</span></div>
                 <p className="mt-16 text-xs font-bold tracking-[.12em] text-[#667484]">التعليم</p><h3 data-testid="text-education" className="mt-3 text-2xl font-bold leading-9 text-[#20364c]">الجامعة الأمريكية<br />في الشرق الأوسط (AUM)</h3><p className="mt-4 text-[#536577]">هندسة الكمبيوتر · الكويت</p>
@@ -220,6 +221,15 @@ function Home() {
               <div className="reveal reveal-delay-1 timeline-card rounded-[1.5rem] border border-[#20364c]/15 bg-[#20364c] p-7 text-[#edf0de]">
                 <div className="flex items-start justify-between gap-4"><div className="flex h-16 w-16 items-center justify-center overflow-hidden rounded-2xl bg-[#0d111b] ring-1 ring-[#bdd944]/30"><img src={uulaLogo} alt="شعار منصة علا" className="h-full w-full object-cover" /></div><span className="pt-2 font-mono-custom text-xs text-[#bdd944]">EXPERIENCE / 01</span></div>
                 <p className="mt-10 text-xs font-bold tracking-[.12em] text-[#bdd944]">خبرات واهتمامات تطبيقية</p><h3 data-testid="text-experience" className="mt-3 text-3xl font-bold">سفير منصة علا<br /><span className="text-[#bdd944]">(UULA Ambassador)</span></h3><p className="mt-5 max-w-lg leading-8 text-[#c6d0c5]">المساهمة في تمثيل منصة علا والتعريف بها، والتواصل مع الطلبة، وبناء حضور إيجابي يعكس قيمة التجربة التعليمية الرقمية.</p><div className="mt-7 flex flex-wrap gap-2" aria-label="خبرات نايف الإضافية"><span className="rounded-full border border-[#bdd944]/40 px-3 py-2 text-xs text-[#edf0de]">تعلم التسويق</span><span className="rounded-full border border-[#bdd944]/40 px-3 py-2 text-xs text-[#edf0de]">إدارة المشاريع الصغيرة</span><span className="rounded-full border border-[#bdd944]/40 px-3 py-2 text-xs text-[#edf0de]">تصميم الشعارات</span><span className="rounded-full border border-[#bdd944]/40 px-3 py-2 text-xs text-[#edf0de]">تصميم البوستات</span></div>
+              </div>
+              <div className="reveal reveal-delay-2 timeline-card overflow-hidden rounded-[1.5rem] border border-[#20364c]/15 bg-[#f1efdf]/60 p-5 text-[#20364c] lg:col-span-2 lg:p-7">
+                <div className="grid items-center gap-7 lg:grid-cols-[1.05fr_.95fr]">
+                  <div className="order-2 lg:order-1">
+                    <div className="flex items-start justify-between gap-4"><div className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#20364c] text-[#bdd944]"><ShieldCheck size={23} aria-hidden="true" /></div><span className="pt-2 font-mono-custom text-xs text-[#ef7f64]">CERTIFICATE / 01</span></div>
+                    <p className="mt-8 text-xs font-bold tracking-[.12em] text-[#ef7f64]">شهادة وتدريب</p><h3 className="mt-3 text-3xl font-bold leading-10">إتمام تدريب في الأمن السيبراني</h3><p className="mt-4 max-w-xl leading-8 text-[#536577]">إتمام 12 ساعة تدريبية في الأمن السيبراني، والمشاركة في هاكاثون كودد المقدّم من أكاديمية CODED.</p><p className="mt-5 font-mono-custom text-xs text-[#667484]">JULY 2024 · KUWAIT CODES</p>
+                  </div>
+                  <div className="order-1 overflow-hidden rounded-2xl border border-[#20364c]/15 bg-white lg:order-2"><img src={cyberCertificate} alt="شهادة إتمام تدريب الأمن السيبراني من أكاديمية CODED" className="block aspect-[1320/910] h-auto w-full object-cover" /></div>
+                </div>
               </div>
             </div>
           </div>
