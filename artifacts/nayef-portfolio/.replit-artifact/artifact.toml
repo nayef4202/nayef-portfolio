@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Portfolio نايف العتيبي"
+description = "موقع Portfolio شخصي عربي ومتجاوب لنايف العتيبي، طالب هندسة كمبيوتر في الجامعة الأمريكية في الشرق الأوسط، لعرض التعليم والمهارات والأنشطة وطرق التواصل."
+version = "1.0.0"
+id = "artifacts/nayef-portfolio"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 21042
+
+[services.development]
+run = "pnpm --filter @workspace/nayef-portfolio run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/nayef-portfolio", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/nayef-portfolio/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "21042"
+BASE_PATH = "/"
