@@ -12,6 +12,7 @@ const instagramUrl = 'https://www.instagram.com/nayef42002?igsi=ano0OTFq&utmsour
 const email = 'nayef4202@gmail.com';
 const profileImage = `${import.meta.env.BASE_URL}profile.jpg`;
 const uulaLogo = `${import.meta.env.BASE_URL}uula-logo.png`;
+const aumCampusImage = `${import.meta.env.BASE_URL}aum-campus.webp`;
 const cyberCertificate = `${import.meta.env.BASE_URL}cybersecurity-certificate.jpg`;
 const poetryEventImage = `${import.meta.env.BASE_URL}poetry-event.jpg`;
 const uulaVideoFile = `${import.meta.env.BASE_URL}uula-ambassador-video-03.mp4`;
@@ -234,7 +235,7 @@ function Home() {
             <div className="grid gap-5 lg:grid-cols-2">
               <div className="reveal timeline-card rounded-[1.5rem] border border-[#20364c]/15 bg-[#f1efdf]/60 p-7">
                 <div className="flex items-start justify-between"><GraduationCap size={28} className="text-[#ef7f64]" /><span className="font-mono-custom text-xs text-[#ef7f64]">2026—</span></div>
-                <p className="mt-16 text-xs font-bold tracking-[.12em] text-[#667484]">التعليم</p><h3 data-testid="text-education" className="mt-3 text-2xl font-bold leading-9 text-[#20364c]">الجامعة الأمريكية<br />في الشرق الأوسط (AUM)</h3><p className="mt-4 text-[#536577]">هندسة الكمبيوتر · الكويت</p>
+                <div className="mb-6 overflow-hidden rounded-2xl border border-[#20364c]/15"><img src={aumCampusImage} alt="مبنى الجامعة الأمريكية في الشرق الأوسط AUM" className="block aspect-[815/371] h-auto w-full object-cover" /></div><p className="mt-8 text-xs font-bold tracking-[.12em] text-[#667484]">التعليم</p><h3 data-testid="text-education" className="mt-3 text-2xl font-bold leading-9 text-[#20364c]">الجامعة الأمريكية<br />في الشرق الأوسط (AUM)</h3><p className="mt-4 text-[#536577]">هندسة الكمبيوتر · الكويت</p>
               </div>
               <div className="reveal reveal-delay-1 timeline-card rounded-[1.5rem] border border-[#20364c]/15 bg-[#20364c] p-7 text-[#edf0de]">
                 <div className="flex items-start justify-between gap-4"><div className="flex h-16 w-16 items-center justify-center overflow-hidden rounded-2xl bg-[#0d111b] ring-1 ring-[#bdd944]/30"><img src={uulaLogo} alt="شعار منصة علا" className="h-full w-full object-cover" /></div><span className="pt-2 font-mono-custom text-xs text-[#bdd944]">EXPERIENCE / 01</span></div>
