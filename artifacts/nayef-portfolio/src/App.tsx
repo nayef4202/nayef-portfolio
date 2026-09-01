@@ -28,6 +28,7 @@ const navItems = [
 ];
 
 const skills = [
+  { label: 'التفوق الدراسي', note: 'من أوائل الطلبة في الثانوية العامة على مدار جميع المراحل الدراسية', icon: GraduationCap },
   { label: 'أساسيات البرمجة', note: 'منطق واضح، خطوة بخطوة', icon: Code2 },
   { label: 'أساسيات هندسة الكمبيوتر', note: 'فهم الأنظمة من الداخل', icon: Cpu },
   { label: 'أساسيات الأمن السيبراني', note: 'وعي وحماية للأنظمة والبيانات', icon: ShieldCheck },
@@ -37,7 +38,6 @@ const skills = [
   { label: 'إدارة الوقت', note: 'أحضر لما هو قادم', icon: Check },
   { label: 'التواصل والعمل الجماعي', note: 'أفضل الأفكار تُبنى معًا', icon: Users },
   { label: 'اللغة الإنجليزية', note: 'نافذة على المعرفة', icon: ArrowUpRight },
-  { label: 'التفوق الدراسي', note: 'من أوائل الطلبة في الثانوية العامة على مدار جميع المراحل الدراسية', icon: GraduationCap },
 ];
 
 const interests = [
