@@ -1,6 +1,6 @@
 import { type ReactNode, useEffect, useState } from 'react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { ArrowDown, ArrowUpRight, BrainCircuit, BriefcaseBusiness, Check, ChevronDown, Code2, Coffee, Cpu, Github, GraduationCap, Instagram, Linkedin, Mail, Menu, Sparkles, Target, Users, X } from 'lucide-react';
+import { ArrowDown, ArrowUpRight, BrainCircuit, BriefcaseBusiness, Check, ChevronDown, Code2, Coffee, Cpu, Github, GraduationCap, Instagram, Linkedin, Mail, Menu, ShieldCheck, Sparkles, Target, Users, X } from 'lucide-react';
 import { ErrorBoundary } from '@/components/error-boundary';
 import { Toaster } from '@/components/ui/toaster';
 import { TooltipProvider } from '@/components/ui/tooltip';
@@ -24,6 +24,7 @@ const navItems = [
 const skills = [
   { label: 'أساسيات البرمجة', note: 'منطق واضح، خطوة بخطوة', icon: Code2 },
   { label: 'أساسيات هندسة الكمبيوتر', note: 'فهم الأنظمة من الداخل', icon: Cpu },
+  { label: 'أساسيات الأمن السيبراني', note: 'وعي وحماية للأنظمة والبيانات', icon: ShieldCheck },
   { label: 'حل المشكلات', note: 'أحوّل التعقيد إلى مسار', icon: Target },
   { label: 'التفكير المنطقي', note: 'أسأل قبل أن أبني', icon: BrainCircuit },
   { label: 'التعلم الذاتي', note: 'فضول لا يتوقف', icon: Sparkles },
@@ -183,7 +184,7 @@ function Home() {
         </section>
 
         <div className="section-wrap border-y border-[#20364c]/15 py-5">
-          <div className="flex items-center justify-between gap-5 overflow-hidden whitespace-nowrap text-xs font-semibold text-[#667484]"><span className="font-mono-custom text-[#ef7f64]">01 — INTRODUCTION</span><span className="hidden sm:block">الكويت</span><span className="hidden sm:block">AUM / COMPUTER ENGINEERING</span><span className="font-mono-custom">2024—</span></div>
+          <div className="flex items-center justify-between gap-5 overflow-hidden whitespace-nowrap text-xs font-semibold text-[#667484]"><span className="font-mono-custom text-[#ef7f64]">01 — INTRODUCTION</span><span className="hidden sm:block">الكويت</span><span className="hidden sm:block">AUM / COMPUTER ENGINEERING</span><span className="font-mono-custom">2026—</span></div>
         </div>
 
         <section id="about" className="scroll-mt-24 py-28 md:py-40">
@@ -213,7 +214,7 @@ function Home() {
             <SectionIntro number="03" eyebrow="المسيرة حتى الآن" title="الخطوة الأولى ليست صغيرة عندما تعرف إلى أين تتجه." />
             <div className="grid gap-5 lg:grid-cols-[1fr_1.3fr]">
               <div className="reveal timeline-card rounded-[1.5rem] border border-[#20364c]/15 bg-[#f1efdf]/60 p-7">
-                <div className="flex items-start justify-between"><GraduationCap size={28} className="text-[#ef7f64]" /><span className="font-mono-custom text-xs text-[#ef7f64]">2024—</span></div>
+                <div className="flex items-start justify-between"><GraduationCap size={28} className="text-[#ef7f64]" /><span className="font-mono-custom text-xs text-[#ef7f64]">2026—</span></div>
                 <p className="mt-16 text-xs font-bold tracking-[.12em] text-[#667484]">التعليم</p><h3 data-testid="text-education" className="mt-3 text-2xl font-bold leading-9 text-[#20364c]">الجامعة الأمريكية<br />في الشرق الأوسط (AUM)</h3><p className="mt-4 text-[#536577]">هندسة الكمبيوتر · الكويت</p>
               </div>
               <div className="reveal reveal-delay-1 timeline-card rounded-[1.5rem] border border-[#20364c]/15 bg-[#20364c] p-7 text-[#edf0de]">
