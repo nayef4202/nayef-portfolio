@@ -10,6 +10,7 @@ import { Route, Switch, Router as WouterRouter } from 'wouter';
 const queryClient = new QueryClient();
 const instagramUrl = 'https://www.instagram.com/nayef42002?igsi=ano0OTFq&utmsource=qr';
 const email = 'nayef4202@gmail.com';
+const profileImage = `${import.meta.env.BASE_URL}profile.jpg`;
 
 const navItems = [
   { id: 'about', label: 'عني' },
@@ -167,13 +168,11 @@ function Home() {
             </div>
             <div className="reveal reveal-delay-2 relative mx-auto w-full max-w-[420px]">
               <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] border border-[#20364c]/20 bg-[#20364c] p-6 shadow-[18px_20px_0_rgba(189,217,68,.55)]">
-                <div className="absolute inset-0 opacity-40" style={{ backgroundImage: 'linear-gradient(rgba(189,217,68,.18) 1px, transparent 1px), linear-gradient(90deg, rgba(189,217,68,.18) 1px, transparent 1px)', backgroundSize: '30px 30px' }} />
-                <div className="relative flex h-full flex-col justify-between">
+                 <img src={profileImage} alt="صورة نايف العتيبي الشخصية" className="absolute inset-0 h-full w-full object-cover object-top" />
+                 <div className="absolute inset-0 bg-gradient-to-t from-[#20364c] via-[#20364c]/15 to-transparent" />
+                 <div className="absolute inset-0 opacity-25" style={{ backgroundImage: 'linear-gradient(rgba(189,217,68,.18) 1px, transparent 1px), linear-gradient(90deg, rgba(189,217,68,.18) 1px, transparent 1px)', backgroundSize: '30px 30px' }} />
+                 <div className="relative z-[1] flex h-full flex-col justify-between">
                   <div className="flex items-center justify-between text-[#bdd944]"><span className="font-mono-custom text-xs">NAYEF / 01</span><span className="h-3 w-3 rounded-full bg-[#ef7f64]" /></div>
-                  <div className="relative mx-auto flex h-48 w-48 items-center justify-center rounded-full border border-[#bdd944]/60">
-                    <div className="absolute h-36 w-36 rounded-full border border-[#ef7f64]/70" />
-                    <div className="flex h-20 w-20 items-center justify-center rounded-2xl bg-[#bdd944] text-5xl font-bold text-[#20364c]">ن</div>
-                  </div>
                   <div><p className="font-mono-custom text-[10px] uppercase tracking-[.22em] text-[#bdd944]">curiosity in progress</p><p className="mt-3 max-w-xs text-2xl font-bold leading-9 text-[#edf0de]">أتعلم اليوم<br />لأبني غدًا.</p></div>
                 </div>
               </div>
