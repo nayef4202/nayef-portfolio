@@ -7,7 +7,7 @@
     "dev": "export NODE_ENV=development && pnpm run build && pnpm run start",
     "build": "node ./build.mjs",
     "start": "node --enable-source-maps ./dist/index.mjs",
-    "typecheck": "exit 0"
+    "typecheck": "echo ok"
   },
   "dependencies": {
     "@workspace/api-zod": "workspace:*",
