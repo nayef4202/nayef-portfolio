@@ -1,0 +1,4 @@
+{
+  "buildCommand": "pnpm --filter @workspace/nayef-portfolio run build",
+  "outputDirectory": "artifacts/nayef-portfolio/dist"
+}
